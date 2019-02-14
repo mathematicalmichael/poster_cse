@@ -25,7 +25,7 @@ clean:
 
 # main targets
 
-poster.pdf: poster.tex poster.bib $(DEPS)
+poster.pdf: poster.tex notation.tex framework.tex poster.bib $(DEPS)
 	$(eval SRC_$@ = $(patsubst %.tex, %, $<))
 	$(LATEX) $(SRC_$@)
 	$(BIBTEX) $(SRC_$@)

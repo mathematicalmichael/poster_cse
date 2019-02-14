@@ -1,0 +1,25 @@
+\begin{block}{Notation}
+
+    \begin{itemize}
+        \itembox{$\pspace$} Parameter Space
+        \itembox{$O: \pspace \to \dspace \subset \RR^D$} Observables
+        \itembox{$\nspace \subset \RR^D$} Noise Space
+        \itembox{$\param^\dagger, \noise^\dagger$} (True) Reference Parameter and Noise Values
+        \itembox{$\data(\noise) \subset \RR^D$} Data, where $d_i(\noise) = \obs_i(\param^\dagger) + \xi_i$
+    \end{itemize}
+
+
+    \heading{Quantity of Interest Map}
+    \emph{Defines a (functional) relationship between predictions and data}
+
+    \begin{equation}
+        Q \left (\param, \noise \right ) = F \left ( \obs(\param), \data(\noise) \right )
+    \end{equation} 
+
+    \begin{equation}
+        Q \left (\param \right ) = F \left ( \obs(\param), \data^\dagger \right )
+    \end{equation}
+
+\end{block}
+
+
