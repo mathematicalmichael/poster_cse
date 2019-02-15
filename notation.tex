@@ -7,6 +7,7 @@
         \itembox{$\param^\dagger\in\pspace$} True (Reference) Parameter
         \itembox{$\data(\noise) \subset \RR^D$} Possible Data, where $d_i(\noise) = \obs_i(\param^\dagger) + \xi_i$
         \itembox{$\noise^\dagger\in\nspace$} Noise that Polluted (Observed) Data
+        \itembox{$ \sigma $} Variance of Noise
         \itembox{$\data^\dagger\in\RR^D$} Observed Data, where $\data^\dagger = \data(\noise^\dagger)$
     \end{itemize}
 
@@ -16,10 +17,11 @@
 
         $$Q \left (\param, \noise \right ) = F \left ( \obs(\param), \data(\noise) \right ) $$
         $$Q \left (\param \right ) = F \left ( \obs(\param), \data^\dagger \right )$$
-        $$Q \left ( \pspace \right ) := \dspace \subset \RR$$
+        $$Q \left ( \pspace, \nspace \right ) =: \dspace_t \subset \RR$$
+        $$Q \left ( \pspace \right ) =: \dspace_c \subset \dspace_t$$
 \normalsize
     \begin{figure}
-        \includegraphics[width=20cm]{ref1}
+        \includegraphics[width=20cm]{figure}
     \end{figure}
 
 \end{block}

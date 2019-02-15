@@ -16,7 +16,7 @@
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{pgfplots}
-\pgfplotsset{compat=1.15}
+%\pgfplotsset{compat=1.15}
 
 % ====================
 % Lengths
@@ -41,7 +41,7 @@
 % Data-Consistent Inversion Framework
 
 \DeclareMathOperator*{\param}{\lambda}
-\DeclareMathOperator*{\pspace}{\Lambda}
+\newcommand{\pspace}{\Lambda}
 \newcommand{\pmeas}{\mu_{\pspace}}
 \newcommand{\pborel}{\mathcal{B}_{\pspace}}
 
@@ -55,14 +55,13 @@
 
 \newcommand{\obs}{\boldsymbol{o}}
 \newcommand{\data}{\boldsymbol{d}}
-\DeclareMathOperator*{\dspace}{\mathcal{D}}
+\newcommand{\dspace}{\mathcal{D}}
 \newcommand{\dmeas}{\mu_{\dspace}}
 \newcommand{\dborel}{\mathcal{B}_{\dspace}}
 
 \DeclareMathOperator*{\lam}{\left ( \param \right ) }
 \DeclareMathOperator*{\qoi}{Q \lam }
 \DeclareMathOperator*{\qlam}{\left ( \qoi \right ) }
-\DeclareMathOperator*{\M}{\mathcal{M}}
 
 \DeclareMathOperator*{\observedP}{\PP^{ob}}
 \DeclareMathOperator*{\observed}{\pi^{ob}}
@@ -97,7 +96,7 @@
 
   \include{notation}
 
-  \include{examples}
+  \include{framework}
 
   %\include{attribution}
 
@@ -107,9 +106,10 @@
 
 \begin{column}{\colwidth}
 
-  \include{framework}
 
   \include{observed}
+
+  \include{examples}
 
   \include{convergence}
 

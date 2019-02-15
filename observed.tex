@@ -1,18 +1,18 @@
 \begin{block}{The Observed Distribution}
 \centering
 \Large
-    $\observed$ describes $Q(\param^\dagger, \noise)$ when we allow $\noise$ to vary over $\nspace$.
+    $Q(\param^\dagger, \noise) \sim \observed$ when we allow $\noise$ to vary over $\nspace$.
 \vspace{1cm}
     \begin{table}
       \centering
-      \begin{tabular}{c c l c}
+      \begin{tabular}{c c c}
         %\toprule
-        \textbf{Functional} & \textbf{Equation} & \textbf{Assumptions} & \bf{Observed} \\
+        \textbf{$F(\obs, \data^\dagger)$} & \textbf{$\noise$} & {$\observed$} \\
         \midrule
-        CLT & $\frac{1}{\sigma\sqrt{D}} \large\sum \left( \obs_i\lam - \data_i^\dagger \right)$ & $\noise \sim L^2$ & $N(0,1)$ \\
-        SSE &  $\frac{1}{\sigma^2} \large\sum \left ( \obs_i\lam - \data_i^\dagger \right)^2$ & $\noise \sim N(0,\sigma^2)$ & $\chi^2 (D)$ \\
-        MSE & $\frac{1}{\sigma^2 D} \large\sum \left ( \obs_i\lam - \data_i^\dagger \right)^2$ & $\noise \sim N(0,\sigma^2)$ & $\Gamma \left ( D/2, D/2) \right )$ \\
-        etc. & \dots & \dots & \dots \\
+        $\frac{1}{\sigma\sqrt{D}} \large\sum \left( \obs_i\lam - \data_i^\dagger \right)$ & $\noise \sim L^2$ & $N(0,1)$ \\
+        $\frac{1}{\sigma^2} \large\sum \left ( \obs_i\lam - \data_i^\dagger \right)^2$ & $\noise \sim N(0,\sigma^2)$ & $\chi^2 (D)$ \\
+        $\frac{1}{\sigma^2 D} \large\sum \left ( \obs_i\lam - \data_i^\dagger \right)^2$ & $\noise \sim N(0,\sigma^2)$ & $\Gamma \left ( D/2, D/2) \right )$ \\
+        \dots & \dots & \dots \\
         \bottomrule
       \end{tabular}
       \caption{\large Choices of $F$ and associated $\observed$ for problem, where $\data_i^\dagger = \data(\noise_i^\dagger)$.}
