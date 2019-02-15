@@ -1,23 +1,25 @@
 \begin{block}{Notation}
-
+\large
     \begin{itemize}
-        \itembox{$\pspace$} Parameter Space
-        \itembox{$O: \pspace \to \dspace \subset \RR^D$} Observables
+        \itembox{$\pspace \subset \RR^P$} Parameter Space
+        \itembox{$\obs: \pspace \to \mathcal{O} \subset \RR^D$} Observables
         \itembox{$\nspace \subset \RR^D$} Noise Space
-        \itembox{$\param^\dagger, \noise^\dagger$} (True) Reference Parameter and Noise Values
-        \itembox{$\data(\noise) \subset \RR^D$} Data, where $d_i(\noise) = \obs_i(\param^\dagger) + \xi_i$
+        \itembox{$\param^\dagger\in\pspace$} True (Reference) Parameter
+        \itembox{$\data(\noise) \subset \RR^D$} Possible Data, where $d_i(\noise) = \obs_i(\param^\dagger) + \xi_i$
+        \itembox{$\noise^\dagger\in\nspace$} Noise that Polluted (Observed) Data
+        \itembox{$\data^\dagger\in\RR^D$} Observed Data, where $\data^\dagger = \data(\noise^\dagger)$
     \end{itemize}
 
-
+\Large
     \heading{Quantity of Interest Map}
-    \emph{Defines a (functional) relationship between predictions and data}
+    \emph{\Large Defines a (functional) relationship between predictions and data}
 
     \begin{equation}
-        Q \left (\param, \noise \right ) = F \left ( \obs(\param), \data(\noise) \right )
-    \end{equation} 
-
-    \begin{equation}
-        Q \left (\param \right ) = F \left ( \obs(\param), \data^\dagger \right )
+        \begin{split}
+        Q \left (\param, \noise \right ) &= F \left ( \obs(\param), \data(\noise) \right ) \\
+        Q \left (\param \right ) &= F \left ( \obs(\param), \data^\dagger \right ) \\
+        Q \left ( \pspace \right ) &:= \dspace
+        \end{split}
     \end{equation}
 
     \begin{figure}
