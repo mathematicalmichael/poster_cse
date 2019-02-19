@@ -1,10 +1,39 @@
-\begin{block}{Examples}
+\begin{block}{Example}
+\centering
+    Consider an exponential decay problem with uncertain initial condition.
+    \begin{equation*}
+        \partial_t u = - u, \; u(t_0) = \lambda^\dagger
+    \end{equation*}
 
     \begin{figure}
-        \includegraphics[width=30cm]{error_id_map}
-    \end{figure}
-    \begin{figure}
-        \includegraphics[width=30cm]{predicted}
+        \includegraphics[height=10cm]{ref1}
     \end{figure}
 
 \end{block}
+
+%\vspace{-1cm}
+
+\begin{block}{Convergence}
+\centering
+
+    \begin{figure}
+        \includegraphics[height=10cm]{ref1}
+        \caption{$\predicted$ for $D=1, 10,50,100$, with $\param^\dagger$ for $N=1E4$.}
+    \end{figure}
+
+\end{block}
+
+%\vspace{-1cm}
+
+\begin{block}{Stability}
+
+    \begin{figure}
+        \includegraphics[width=10cm]{ref1}
+        \includegraphics[width=10cm]{ref1}
+        \includegraphics[width=10cm]{ref1}
+        \includegraphics[width=10cm]{ref1}
+        \caption{$\predicted$ for fifty possible $\noise^\dagger$s for $D=1, 10, 50, 100$.}
+    \end{figure}
+
+\end{block}
+%\vspace{-1cm}

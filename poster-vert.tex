@@ -9,13 +9,12 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[size=custom,width=100,height=75,scale=1.0]{beamerposter}
+\usepackage[size=custom,width=75,height=100,scale=1.0]{beamerposter}
 \usetheme{gemini}
 \usecolortheme{labsix}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tikz}
-\usepackage{caption}
 \usepackage{pgfplots}
 %\pgfplotsset{compat=1.15}
 
@@ -27,8 +26,8 @@
 % (N+1)*\sepwidth + N*\colwidth = \paperwidth
 \newlength{\sepwidth}
 \newlength{\colwidth}
-\setlength{\sepwidth}{0.04375\paperwidth}
-\setlength{\colwidth}{0.275\paperwidth}
+\setlength{\sepwidth}{0.0333\paperwidth}
+\setlength{\colwidth}{0.45\paperwidth}
 
 % Spacing / Formatting
 \newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
@@ -97,32 +96,24 @@
 
   \include{notation}
 
-  %\include{framework}
-
+  \include{framework}
 
   %\include{attribution}
 
 \end{column}
 
-
 \separatorcolumn
 
 \begin{column}{\colwidth}
 
-  \include{framework}
 
   \include{observed}
 
-  \include{references}
-
-\end{column}
-
-\separatorcolumn
-
-\begin{column}{\colwidth}
-
   \include{examples}
-  
+
+  \include{convergence}
+
+  \include{references}
 
 \end{column}
 
