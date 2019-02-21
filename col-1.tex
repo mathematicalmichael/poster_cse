@@ -1,0 +1,43 @@
+\begin{block}{Introduction}
+\centering
+        \heading{Motivation} 
+            {\large How do we update initial descriptions of uncertainty using data and model predictions?}
+
+        \heading{Background}
+             %{\large \emph{Data Consistent Inversion} is a Measure-Theoretic Framework for the solution of stochastic inverse problems. }
+             {\large \emph{Data Consistent Inversion} is a framework that ensures solutions are consistent with the distribution of data.}
+
+        \heading{Question} 
+             {\large \emph{How do we perform \textbf{Parameter Identification} in the context of \textbf{Data-Consistent Inversion}?} }
+
+\end{block}
+
+\begin{block}{Framework}
+\large
+    \begin{itemize}
+        \itembox{$ \PP, \; \pi $} Probability Measure, Density
+        %\itembox{$ \pi $} Density (Radon-Nikodym)
+        \itembox{$\pspace \subset \RR^P$} Parameter Space
+        \itembox{$\obs: \pspace \to \mathcal{O} \subset \RR^D$} Observables
+        \itembox{$\nspace \subset \RR^D$} Noise Space
+        \itembox{$\param^\dagger\in\pspace$} True Parameter
+        \itembox{$\data(\noise) \subset \RR^D$} Possible Data, $d_i(\noise) = \obs_i(\param^\dagger) + \xi_i$
+        \itembox{$\noise^\dagger\in\nspace$} Noise in Measurements
+        \itembox{$ \sigma $} Variance of Noise
+        \itembox{$\data^\dagger\in\RR^D$} Observed Data, $\data^\dagger = \data(\noise^\dagger)$
+        \itembox{$ \initialP, \; \initial $} Initial
+        \itembox{$ \observedP, \; \observed $} Observed
+        \itembox{$ \predictedP, \; \predicted $} Predicted (\textbf{Push-forward})
+        \itembox{$ \updatedP, \; \updated $} Updated
+    \end{itemize}
+\centering
+    \heading{Updating with Observations and Predictions}
+    \begin{equation*}
+            \dciP \quad \vline \quad \dci
+    \end{equation*}
+    %\begin{equation*}
+    %        \dci
+    %\end{equation*}
+
+\end{block}
+

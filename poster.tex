@@ -65,10 +65,10 @@
 \DeclareMathOperator*{\qoi}{Q \lam }
 \DeclareMathOperator*{\qlam}{\left ( \qoi \right ) }
 
-\DeclareMathOperator*{\observedP}{\PP_{ob}}
-\DeclareMathOperator*{\observed}{\pi_{ob}}
-\DeclareMathOperator*{\predictedP}{\PP_{pr}}
-\DeclareMathOperator*{\predicted}{\pi_{pr}}
+\DeclareMathOperator*{\observedP}{\PP_{obs}}
+\DeclareMathOperator*{\observed}{\pi_{obs}}
+\DeclareMathOperator*{\predictedP}{\PP_{pre}}
+\DeclareMathOperator*{\predicted}{\pi_{pre}}
 
 \DeclareMathOperator*{\dciP}{\updatedP = \initialP \frac{\observedP}{\predictedP}}
 \DeclareMathOperator*{\dciD}{\updated = \initial \frac{\observed}{\predicted}}
@@ -96,25 +96,8 @@
 
 \begin{column}{\colwidth}
 
-  \include{notation}
-
-  %\include{framework}
-
-
-  %\include{attribution}
-
-\end{column}
-
-
-\separatorcolumn
-
-\begin{column}{\colwidth}
-
-  \include{framework}
-
-  \vspace{-1cm}
-  \include{observed}
-  \vspace{-1cm}
+  \include{col-1}
+  \vspace{-2cm}
   \include{references}
 
 \end{column}
@@ -123,11 +106,16 @@
 
 \begin{column}{\colwidth}
 
-  %\include{examples}
+  \include{col-2}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
 
   \include{examples-large}
   
-
 \end{column}
 
 \separatorcolumn
