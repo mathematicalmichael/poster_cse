@@ -17,6 +17,7 @@
 \usepackage{tikz}
 \usepackage{caption}
 \usepackage{pgfplots}
+\usepackage{array} % for spacing tables out \extrarowheight
 %\pgfplotsset{compat=1.15}
 
 % ====================
@@ -46,10 +47,10 @@
 \newcommand{\pmeas}{\mu_{\pspace}}
 \newcommand{\pborel}{\mathcal{B}_{\pspace}}
 
-\DeclareMathOperator*{\initialP}{\PP^{in}}
-\DeclareMathOperator*{\initial}{\pi^{in}}
-\DeclareMathOperator*{\updatedP}{\PP^{up}}
-\DeclareMathOperator*{\updated}{\pi^{up}}
+\DeclareMathOperator*{\initialP}{\PP_{in}}
+\DeclareMathOperator*{\initial}{\pi_{in}}
+\DeclareMathOperator*{\updatedP}{\PP_{up}}
+\DeclareMathOperator*{\updated}{\pi_{up}}
 
 \DeclareMathOperator*{\noise}{\xi}
 \DeclareMathOperator*{\nspace}{\Xi}
@@ -64,10 +65,10 @@
 \DeclareMathOperator*{\qoi}{Q \lam }
 \DeclareMathOperator*{\qlam}{\left ( \qoi \right ) }
 
-\DeclareMathOperator*{\observedP}{\PP^{ob}}
-\DeclareMathOperator*{\observed}{\pi^{ob}}
-\DeclareMathOperator*{\predictedP}{\PP^{pr}}
-\DeclareMathOperator*{\predicted}{\pi^{pr}}
+\DeclareMathOperator*{\observedP}{\PP_{ob}}
+\DeclareMathOperator*{\observed}{\pi_{ob}}
+\DeclareMathOperator*{\predictedP}{\PP_{pr}}
+\DeclareMathOperator*{\predicted}{\pi_{pr}}
 
 \DeclareMathOperator*{\dciP}{\updatedP = \initialP \frac{\observedP}{\predictedP}}
 \DeclareMathOperator*{\dciD}{\updated = \initial \frac{\observed}{\predicted}}
@@ -79,9 +80,9 @@
 
 \title{Push-forward Measures for Parameter Identification under Uncertainty}
 
-\author{Michael Pilosov \inst{1}}
-
-\institute[shortinst]{\inst{1} University of Colorado: Denver}
+\author{\color{black} Michael Pilosov}
+%\institute[shortinst]{\color{black} under the direction of Dr. Troy Butler at the University of Colorado: Denver}
+\institute[shortinst]{\color{black} University of Colorado: Denver}
 
 % ====================
 % Body
@@ -111,8 +112,9 @@
 
   \include{framework}
 
+  \vspace{-1cm}
   \include{observed}
-
+  \vspace{-1cm}
   \include{references}
 
 \end{column}
@@ -121,7 +123,9 @@
 
 \begin{column}{\colwidth}
 
-  \include{examples}
+  %\include{examples}
+
+  \include{examples-large}
   
 
 \end{column}
