@@ -12,7 +12,11 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tikz}
-\usepackage{caption}
+\setbeamertemplate{caption}{%
+  \raggedright
+  \insertcaption\par
+}
+
 \usepackage{pgfplots}
 \usepackage{array} % for spacing tables out \extrarowheight
 %\pgfplotsset{compat=1.15}
